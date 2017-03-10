@@ -20,6 +20,6 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-      System.out.println(CryptoSTB34.test());
+      System.out.println(CryptoSTB34.hash_s());
     }
 }

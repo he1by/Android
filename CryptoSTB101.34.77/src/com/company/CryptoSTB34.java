@@ -1,6 +1,5 @@
 package com.company;
 
-import com.sun.jna.platform.win32.WinDef;
 
 import javax.xml.bind.DatatypeConverter;
 import java.io.*;
@@ -22,7 +21,12 @@ public class CryptoSTB34 {
     //Всё ок
     private static long toLongFromByte(byte[] array)
     {
-//        return DatatypeConverter.printLong();
+        long value = 0;
+        for (int i = 0; i < array.length; i++)
+        {
+            value = (value << 8) + (array[i] & 0xff);
+        }
+        return value;
     }
     private static String toHexString(byte[] array){
         return DatatypeConverter.printHexBinary(array);
@@ -31,19 +35,13 @@ public class CryptoSTB34 {
     private static byte[] toByteArray(String s){
         return DatatypeConverter.parseHexBinary(s);
     }
-   public static byte[] hash_s(){//byte[] W0,byte[] W1,byte W2 , int m1,int n1 ,int m2, int n2){
+   public static long hash_s(){//byte[] W0,byte[] W1,byte W2 , int m1,int n1 ,int m2, int n2){
       // 8,53,14,1
-       byte[] T0 = new byte[16];
-       byte[] T1 = new byte[16];
-       byte[] T2 = new byte[16];
-        return null;
-      //  return RotHi(toByteArray(W0));
+       byte[] w00 = new byte[8];
+       byte[] w01 = new byte[8];
+       byte[] w02 = new byte[8];
+        return RotHi64(toLongFromByte(toByteArray(W0)),64);
    }
-   public static String  test(){
-
-       String buffer=toHexString(hash_s());
-       return buffer;
-    }
     //Тут всё правильно
    private static byte[] Logic_XOR(byte[] left,byte[] right){
        if(left.length==right.length){
@@ -61,5 +59,4 @@ public class CryptoSTB34 {
    private static long RotHi64(long val, int amount){
        return ((val << amount) | (val >>> (64 - amount)));
    }
-
 }
