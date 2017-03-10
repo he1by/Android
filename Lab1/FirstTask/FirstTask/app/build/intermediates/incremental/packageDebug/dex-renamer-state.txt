@@ -1,0 +1,7 @@
+#Fri Mar 10 03:24:20 AKST 2017
+base.0=E\:\\universuty\\3_cours\\semm2\\Android_security\\lab1\\Android-DB-Cryptology-master\\MyCamera\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_796c6c2fcf14f471b094ef0d77ed19a4b5fd07b2
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=E\:\\universuty\\3_cours\\semm2\\Android_security\\lab1\\Android-DB-Cryptology-master\\MyCamera\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_3cfc2608eb672030c431a6328735a46d2e998609\\classes.dex
+base.1=E\:\\universuty\\3_cours\\semm2\\Android_security\\lab1\\Android-DB-Cryptology-master\\MyCamera\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_3cfc2608eb672030c431a6328735a46d2e998609
+file.0=E\:\\universuty\\3_cours\\semm2\\Android_security\\lab1\\Android-DB-Cryptology-master\\MyCamera\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_796c6c2fcf14f471b094ef0d77ed19a4b5fd07b2\\classes.dex
