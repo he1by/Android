@@ -26,6 +26,10 @@ public class Main {
               0x6A307C637B653CF3L, 0x313DB29E79A74EDDL, 0xCFBCD3276EB5983EL, 0x93B75A4C1F181E59L,
               0xA60F0C8F2CE7DEE9L, 0x4796736FF449DB2DL, 0x377A24ED16530706L, 0xF68BA90383A3CB39L,
               0x0141D1E51C9BBD92L, 0xF20E4D5EC9FB4554L, 0x2F647D22AA802068L, 0x1155409034F98726L});
-      System.out.println();
+//File file = new File("E:\\universuty\\3_cours\\semm2\\German\\Stell\\Lab1\\Part 1\\lol.txt");
+long[] ar = new long []{0x114C3DFAE373D9BCL, 0xBC3602D6386F2D6AL, 0x2059BA1BF9048DBAL, 0xA5146A6CB775709DL};
+      System.out.println(CryptoSTB34.getHash(new long[]{0xB194BAC80A08F53BL, 0x366D008E584A5DE4L},128));
+      //  System.out.println(CryptoSTB34.getHash(null,256));
+        System.out.println();
     }
 }
